@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务三十一：表单（三）联动</title>
+    <link rel="stylesheet" href="css/baiduE31.css">
+</head>
+<body>
+<p>选择在校生时,显示学校所在城市选择;选择非在校生,显示就业单位</p>
+<div class="container">
+    <form id="form-identity" class="" name="form-identity" action="">
+
+        <input id="radio-identity-student" class="radio-identity" name="identity" type="radio" value="student">
+        <label for="radio-identity-student">在校生</label>
+
+        <input id="radio-identity-worker" class="radio-identity" name="identity" type="radio" value="worker">
+        <label for="radio-identity-worker">非在校生</label>
+    </form>
+    <form id="form-details-student" class="" name="form-details-student" action="">
+        <label for="select-school-region">学校地区</label>
+        <select id="select-school-region" class="select-level-1">
+            <option value="beijing">北京</option>
+            <option value="shanghai">上海</option>
+            <option value="guilin">桂林</option>
+        </select>
+        <label for="select-school">学校</label>
+        <select id="select-school" class="select-level-2">
+
+        </select>
+    </form>
+    <form id="form-details-worker" class="" name="form-details-worker" action="">
+        <label for="company-name">所在单位</label>
+        <input id="company-name" class="" name="" type="text">
+    </form>
+    <form id="form-details" class="" name="form-details" action="">
+        <label for="input-name">
+            <span class="label-left">姓名</span>
+            <div class="input-area">
+                <input id="input-name" class="" name="input-name" type="text">
+                <div id="input-name-show">请输入姓名</div>
+            </div>
+        </label>
+        <br>
+        <label for="input-password-0">
+            <span class="label-left">请输入密码</span>
+            <div class="input-area">
+                <input id="input-password-0" class="" name="input-password-0" type="password">
+                <div id="input-password-0-show">请输入密码</div>
+            </div>
+        </label>
+        <br>
+        <label for="input-password-1">
+            <span class="label-left">请再次输入密码</span>
+            <div class="input-area">
+                <input id="input-password-1" class="" name="input-password-1" type="password">
+                <div id="input-password-1-show">请再次输入密码</div>
+            </div>
+        </label>
+        <br>
+        <input id="sumbit-btn" class="" name="" type="submit" value="提交">
+    </form>
+</div>
+<script src="js/baiduE31.js"></script>
+</body>
+</html>

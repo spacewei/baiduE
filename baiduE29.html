@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务二十九：表单（一）单个表单项的检验</title>
+    <link rel="stylesheet" href="css/baiduE29.css">
+</head>
+<body>
+<form action="http://localhost/PHPdemo0/PHPdemo0.php" id="form-all0" method="post">
+    <div class="form-div">
+        <label for="form00">
+            <span>名称</span>
+            <div class="input-div">
+                <input type="text" name="form0" id="form00">
+                <div id="form-label0">必填,长度为4~16个字符</div>
+            </div>
+        </label>
+        <button type="submit" name="form0-btn" id="form00-btn">验证</button>
+    </div>
+</form>
+<form action="" id="form-all">
+    <div class="form-div form2">
+        <label for="form11">
+            <span>名称</span>
+            <div class="input-div">
+                <input type="text" name="form1" id="form11" required >
+                <div id="form-label11" class="form2-label">请输入姓名</div>
+            </div>
+        </label>
+        <br>
+        <label for="form12">
+            <span>密码</span>
+            <div class="input-div">
+                <input type="password" name="form1" id="form12">
+                <div id="form-label12" class="form2-label">请输入密码</div>
+            </div>
+        </label>
+        <br>
+        <label for="form13">
+            <span>确认密码</span>
+            <div class="input-div">
+                <input type="password" name="form1" id="form13">
+                <div id="form-label13" class="form2-label">请输入密码</div>
+            </div>
+        </label>
+        <br>
+        <label for="form14">
+            <span>手机</span>
+            <div class="input-div">
+                <input type="text" name="form1" id="form14">
+                <div id="form-label14" class="form2-label">请输入手机号码,必须是数字</div>
+            </div>
+        </label>
+        <br>
+        <label for="form15">
+            <span>邮箱</span>
+            <div class="input-div">
+                <input type="text" name="form1" id="form15">
+                <div id="form-label15" class="form2-label">请输入符合格式的邮箱(开头不能是@)</div>
+            </div>
+        </label>
+        <br>
+        <button type="submit" name="form1-btn" id="form11-btn">验证</button>
+
+    </div>
+    <div class="form-div">
+        <label for="form22">
+            <span>名称</span>
+            <div class="input-div">
+                <input type="text" name="form2" id="form22">
+                <div id="form-label2">名称格式正确</div>
+            </div>
+        </label>
+        <button type="button" name="form2-btn" id="form22-btn">验证</button>
+    </div>
+</form>
+
+<script src="js/baiduE29.js"></script>
+</body>
+</html>

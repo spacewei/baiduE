@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务三十二：表单（四）实现表单自动生成工厂</title>
+    <link rel="stylesheet" href="css/baiduE32.css">
+</head>
+<body>
+<fieldset>
+    <legend>表单类型</legend>
+    <input id="type-text" class="" name="type-all" type="radio" value="text" checked="checked">
+    <label for="type-text" class="label-type">输入框</label>
+
+    <input id="type-radio" class="" name="type-all" type="radio" value="radio">
+    <label for="type-radio" class="label-type">单选框</label>
+
+    <input id="type-checkbox" class="" name="type-all" type="radio" value="checkbox">
+    <label for="type-text" class="label-type">多选框</label>
+
+    <input id="type-select" class="" name="type-all" type="radio" value="select">
+    <label for="type-select" class="label-type">下拉框</label>
+
+    <input id="type-textarea" class="" name="type-all" type="radio" value="textarea">
+    <label for="type-textarea" class="label-type">文本域</label>
+</fieldset>
+<fieldset>
+    <legend>配置</legend>
+    <label>
+        名称:
+        <input id="input-name" class="" name="input-configure" type="text">
+    </label>
+    <label>
+        样式
+        <select id="input-style" class="">
+            <option value="style-0">样式一</option>
+            <option value="style-1">样式二</option>
+        </select>
+    </label>
+</fieldset>
+<fieldset>
+    <legend>规则</legend>
+    <div id="rule-configure">
+
+    </div>
+</fieldset>
+<button id="add-btn" class="" name="add-brn" type="button">add</button>
+<div>
+    <h1>生成表单展示区</h1>
+    <div id="show-form">
+
+    </div>
+</div>
+<script src="js/baiduE32.js"></script>
+</body>
+</html>

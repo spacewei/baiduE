@@ -1,0 +1,92 @@
+@CHARSET "UTF-8";
+div{
+	margin:20px;
+	padding:20px;
+}
+.container0{
+	/*height: 500px;*/
+	/*width:800px;*/
+	border: 2px solid #f00;
+	margin:0px;
+	
+	display: flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:space-between;
+	/*flex-wrap:wrap;*/
+}
+.con0{
+	border: 2px solid #f00;
+	width: 150px;
+}
+.a0{
+	height: 120px;
+}
+.b0{
+	height: 100px;
+}
+.c0{
+	height: 40px;
+}
+.d0{
+	height: 200px;
+	border-color: #0f0;
+}
+/*可笑,and前后一定要有空格!!!*/
+/*@media
+判断媒体类型，引用不同的样式表
+
+<link rel=”stylesheet” media=”screen and (判断条件)” herf=”需要调用的样式表文件” />
+
+通过设定屏幕的判断条件，调用对应的css文件。该实例多用于整页面不同风格的css调用与选取，使用该方法可能需要为一个页面制作多份个css文件。
+
+二、判断媒体类型，执行不同的css样式属性
+@media screen and (max-width:240px){
+
+.box{width:200px;}
+
+.title{color:red;}
+
+}
+
+*/
+@media all and (max-width:640px){
+	.container0{
+		flex-wrap:wrap;
+		align-items:flex-start;
+		
+	}
+	.d0{
+		order:-1;
+	}
+}
+
+.container1{
+	/*height: 500px;*/
+	/*width:800px;*/
+	border: 2px solid #f00;
+	margin:0px;
+	
+	display: flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+.con1{
+	border: 2px solid #f00;
+	width: 150px;
+}
+.a1{
+	height: 120px;
+	border-color: #0f0;
+}
+.b1{
+	height: 100px;
+}
+.c1{
+	height: 40px;
+}
+.d1{
+	height: 200px;
+}

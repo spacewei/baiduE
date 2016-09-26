@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+table,td{
+	border:1px solid red;
+	border-collapse: collapse;
+}
+input[type="radio"]{
+	/*所有input radio内容不渲染*/
+	display: none;
+}
+ul{
+	list-style-type: none;
+}
+.clear-float:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.div-tab label{
+	width: 48px;
+	/*给label设置圆角边框*/
+	border-top: 1px solid red;
+	border-left: 1px solid red;
+	border-right: 1px solid red;
+	border-radius:5px 5px 0px 0px;
+	/*设置底边框白色,以盖住tab内容上边框*/
+	border-bottom: 2px solid white;
+	position: relative;
+	/*原初,tab label的高度比tab内容低1*/
+	z-index: 1;
+}
+.div-tab ul{
+	padding-left:0;
+	position: relative;
+}
+.div-tab li{
+	float: left;
+	margin-right: 1px;
+	
+}
+.tab-item{
+	/*原初所有tab内容不渲染*/
+	display: none;
+	position: absolute;
+	left: 0;
+	padding: 10px;
+	border: 1px solid red;
+	
+}
+input[type="radio"]:checked ~ [class^="tab-item"]{
+	/*点选后tab内容渲染,*/
+	display: block;
+	z-index: 2;
+}
+input[type="radio"]:checked ~ [class^="tab-lable"]{
+	/*选后,对应tab label高度提高于tab内容*/
+	z-index: 3;
+}
